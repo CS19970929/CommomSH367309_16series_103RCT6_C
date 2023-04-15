@@ -1,0 +1,27 @@
+#ifndef LED_BUZZER_H
+#define LED_BUZZER_H
+
+enum{
+	e_LED_ALM = 0,
+	e_LED_SOC20,
+	e_LED_SOC40,
+	e_LED_SOC60,
+	e_LED_SOC80,
+	e_LED_SOC100,
+	LIGHTBAR_LED_NUM
+};
+
+#define LB_LED_ON		1
+#define LB_LED_OFF		0
+#define MCUO_LED_SOC20		MCUO_ENO_DO1
+#define MCUO_LED_SOC40		MCUO_ENO_DO2
+#define MCUO_LED_SOC60		MCUO_ENO_DO3
+#define MCUO_LED_SOC80		MCUO_ENO_DO4
+#define MCUO_LED_SOC100		MCUO_ENO_DO5
+#define MCUO_LED_ALM		MCUO_ENO_DO6
+
+
+void App_LightBar(void);
+
+#endif	/* LED_BUZZER_H */
+
